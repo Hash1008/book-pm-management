@@ -5,12 +5,12 @@
   "description": "Pulse — a personal health tracker for the PM textbook",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "dev:yorku": "vite --mode yorku",
-    "build:yorku": "vite build --mode yorku",
-    "preview:yorku": "vite preview --mode yorku"
+    "dev": "node node_modules/vite/bin/vite.js",
+    "build": "node node_modules/vite/bin/vite.js build",
+    "preview": "node node_modules/vite/bin/vite.js preview",
+    "dev:yorku": "node node_modules/vite/bin/vite.js --mode yorku",
+    "build:yorku": "node node_modules/vite/bin/vite.js build --mode yorku",
+    "preview:yorku": "node node_modules/vite/bin/vite.js preview --mode yorku"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
