@@ -5,8 +5,8 @@
   "description": "York U Fitness — Crowd Forecast prototype. App source lives in the pulse/ subdirectory.",
   "scripts": {
     "install": "cd pulse && npm install",
-    "build": "cd pulse && npm run build && npm run build:yorku",
-    "build:yorku": "cd pulse && npm run build:yorku",
+    "build": "cd pulse && npm install && node node_modules/vite/bin/vite.js build --mode yorku && cd .. && rm -rf dist && cp -r pulse/dist/pulse/yorku dist",
+    "build:yorku": "cd pulse && npm install && node node_modules/vite/bin/vite.js build --mode yorku && cd .. && rm -rf dist && cp -r pulse/dist/pulse/yorku dist",
     "dev": "cd pulse && npm run dev:yorku",
     "preview": "cd pulse && npm run preview:yorku"
   }
