@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "description": "York U Fitness — Crowd Forecast prototype. App source lives in the pulse/ subdirectory.",
   "scripts": {
-    "install": "npm --prefix pulse install",
-    "build": "npm --prefix pulse run build && npm --prefix pulse run build:yorku",
-    "build:yorku": "npm --prefix pulse run build:yorku",
-    "dev": "npm --prefix pulse run dev:yorku",
-    "preview": "npm --prefix pulse run preview:yorku"
+    "install": "cd pulse && npm install",
+    "build": "cd pulse && npm run build && npm run build:yorku",
+    "build:yorku": "cd pulse && npm run build:yorku",
+    "dev": "cd pulse && npm run dev:yorku",
+    "preview": "cd pulse && npm run preview:yorku"
   }
 }
